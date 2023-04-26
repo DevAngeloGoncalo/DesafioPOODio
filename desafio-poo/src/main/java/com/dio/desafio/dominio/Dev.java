@@ -27,11 +27,11 @@ public class Dev {
         }
     }
 
-    public void calcularTotalXP(){
-        this.conteudosConcluidos
-            .stream()
-            .mapToDouble(Conteudo::calcularXP)
-            .sum();
+    public double calcularTotalXP(){
+        return this.conteudosConcluidos
+                .stream()
+                .mapToDouble(Conteudo::calcularXP)
+                .sum();
     }
 
     public String getNome() {
@@ -42,11 +42,11 @@ public class Dev {
         this.nome = nome;
     }
 
-    public Set<Conteudo> getConteudosEscritos() {
+    public Set<Conteudo> getConteudosInscritos() {
         return conteudosInscritos;
     }
 
-    public void setConteudosEscritos(Set<Conteudo> conteudosEscritos) {
+    public void setConteudosInscritos(Set<Conteudo> conteudosEscritos) {
         this.conteudosInscritos = conteudosEscritos;
     }
 
