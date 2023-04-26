@@ -1,8 +1,8 @@
 package com.dio.desafio;
 
 import java.time.LocalDate;
-import java.util.Currency;
 
+import com.dio.desafio.dominio.Conteudo;
 import com.dio.desafio.dominio.Curso;
 import com.dio.desafio.dominio.Mentoria;
 
@@ -33,5 +33,9 @@ public class Main {
         System.out.println(curso2);
         System.out.println(curso3);
         System.out.println(mentoria1);
+
+        //Polimorfismo
+        Conteudo conteudo1 = new Curso();
+        Conteudo conteudo2 = new Mentoria();
     }
 }
