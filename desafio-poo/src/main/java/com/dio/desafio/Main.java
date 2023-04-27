@@ -2,8 +2,6 @@ package com.dio.desafio;
 
 import java.time.LocalDate;
 
-import javax.sound.midi.Soundbank;
-
 import com.dio.desafio.dominio.Bootcamp;
 import com.dio.desafio.dominio.Conteudo;
 import com.dio.desafio.dominio.Curso;
